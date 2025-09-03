@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="icon" href="Dtafalonso-Android-L-WhatsApp.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidepannel">
+            <div class="sidepannelslide" id="sidepannelslide">
+                <label for="chatbutton" onclick="showchats()">
+                    <p class="ccs"><img src="1000036821.png" alt="" width="20px"> Chats</p>
+                </label>
+                <label for="callbutton" onclick="showcalls()">
+                    <p class="ccs"><img src="1000036850.png" alt="" width="20px"> Calls</p>
+                </label>
+                <label for="statusbutton" onclick="showstatus()">
+                    <p class="ccs"><img src="1000036818.png" alt="" width="20px"> Status</p>
+                </label>
+            </div><input type="checkbox" id="menu" checked>
+            <label for="menu" style="z-index: 5;background-color: transparent;" onclick="hidesidepannel()"
+                class="menubar">
+                <i class="fa fa-bars" aria-hidden="true"
+                    style="color: white;z-index: 5;padding: 10px; background-color: transparent;"></i>
+            </label><label for="menu" onclick="hidesidepannel()">
+                <div id="menuoverlay"></div>
+            </label>
+            <label for="chatbutton" onclick="showchats()"><img class="chatbutton" id="chatbutton1" onclick="showchats()"
+                    src="1000036821.png" alt="" width="30px"></label>
+            <input type="checkbox" id="chatbutton">
+            <label for="callbutton" onclick="showcalls()"><img class="chatbutton" id="callbutton1" onclick="showcalls()"
+                    src="1000036850.png" alt="" width="30px"></label>
+            <input type="checkbox" id="callbutton">
+            <label for="callbutton" onclick="showstatus()"><img class="statubutton" id="statusbutton1"
+                    src="1000036818.png" alt="" width="28px"></label>
+            <input type="checkbox" id="statusbutton">
+            <hr width="20px" style="color: rgb(82, 81, 81);margin-top: 10px;">
+            <div class="pannel">
+                <div class="ai">
+                    <a href="https://www.meta.ai/" class="metaai" target="_blank"><img src="1000036858.png" alt=""
+                            width="20px" height="20px"></a>
+                    <div class="archive">
+                        <i class="fa-regular fa-star" style="color: #ffffff;"></i>
+                        <img src="1000036879.png" alt="" width="20px">
+                        <hr width="20px" style="color: rgb(82, 81, 81);margin-top: 10px;">
+                    </div>
+
+                </div>
+                <div class="settings">
+                    <label for="pro" onclick="openoverlay()" class="settingss">
+                        <img src="1000036884.png" alt="" width="20px">
+                    </label>
+                    <label for="pro" onclick="openoverlay()" class="settingss">
+                        <img src="stylish-spectacles-guy-3d-avatar-character-illustrations-png.png" width="25px"
+                            style="border:1px solid #ffffff; border-radius: 50%; padding: 1px;" alt="">
+                    </label>
+                    <label for="pro" class="profileouter" onclick="openoverlay()">
+                        <div id="profileouter"></div>
+                    </label>
+                    <input type="checkbox" id="pro" checked>
+                    <div class="profilebox">
+                        <div class="left">
+                            <ul class="ul">
+                                <li><i class="fa-solid fa-laptop" style="color: #ffffff;"></i>General</li>
+                                <li><i class="fa-solid fa-key" style="color: #ffffff;"></i>Account</li>
+                                <li><i class="fa-regular fa-comments" style="color: #ffffff;"></i>Chats</li>
+                                <li><i class="fa-solid fa-video" style="color: #ffffff;"></i>Video & Voice</li>
+                                <li><i class="fa-solid fa-bell" style="color: #ffffff;"></i>Notifications</li>
+                                <li><i class="fa-solid fa-paintbrush" style="color: #ffffff;"></i>Personalization</li>
+                                <li><i class="fa-solid fa-hard-drive" style="color: #ffffff;"></i>Storage</li>
+                                <li><i class="fa-solid fa-keyboard" style="color: #ffffff;"></i>Shortcuts</li>
+                                <li><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>Help</li>
+                            </ul>
+                            <ul class="fa-userr">
+                                <div class="leftgreen"></div>
+                                <li><i class="fa-solid fa-user" style="color: #ffffff;"></i>Profile</li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <div class="righttop">
+                                <img src="stylish-spectacles-guy-3d-avatar-character-illustrations-png.png" alt=""
+                                    width="100px" height="100px">
+                                <h2>PenCiL_nk</h2>
+                                <p style="font-size: small; margin-top: 20px;">About</p>
+                                <p>Sleeping</p>
+                                <p style="font-size: small; margin-top: 20px;">Phone number</p>
+                                <p>+91 83006 02615</p>
+                            </div>
+                            <div class="logoutdiv" style="background-color: transparent;">
+                                <button class="logout">Log out</button>
+                                <p style="font-size: 10px; letter-spacing: 0.3px;">Chats on this computer will be
+                                    cleared when you log out.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="mainscreen">
+            <div class="callscreen" id="callscreenid">
+                <div class="calltop">
+                    <p>Calls</p>
+                    <img src="1000036850.png" alt="" width="20px">
+                </div>
+                <div class="searchh">
+                    <input class="searhinput" type="text" placeholder="Search or start a new call" autocomplete="off"
+                        id="searchinput" style="margin-top: 0;">
+                    <i class="fa-solid fa-magnifying-glass sear"></i>
+                </div>
+                <div class="callscroll">
+                    <div class="calldiv">
+                        <div class="callname" style="display: flex;">
+                            <img src="avatar.png" alt="">
+                            <div>
+                                <h4 id="callname">Person 1</h4>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-telephone-x" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                        <path fill-rule="evenodd"
+                                            d="M11.146 1.646a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708" />
+                                    </svg> Missed call</p>
+                            </div>
+                        </div>
+                        <div class="calltime">
+                            <p>16:23</p>
+                        </div>
+                    </div>
+                    <div class="calldiv">
+                        <div class="callname" style="display: flex;">
+                            <img src="images.jpeg" alt="">
+                            <div>
+                                <h4 id="callname">Person 3</h4>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-telephone-x" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                        <path fill-rule="evenodd"
+                                            d="M11.146 1.646a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708" />
+                                    </svg> Missed call</p>
+                            </div>
+                        </div>
+                        <div class="calltime">
+                            <p>16:23</p>
+                        </div>
+                    </div>
+                    <div class="calldiv">
+                        <div class="callname" style="display: flex;">
+                            <img src="stylish-spectacles-guy-3d-avatar-character-illustrations-png.png" alt="">
+                            <div>
+                                <h4 id="callname">Person 4</h4>
+                                <p style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2z" />
+                                    </svg> Video call</p>
+                            </div>
+                        </div>
+                        <div class="calltime">
+                            <p>16:23</p>
+                        </div>
+                    </div>
+                    <div class="calldiv">
+                        <div class="callname" style="display: flex;">
+                            <img src="images (1).png" alt="">
+                            <div>
+                                <h4 id="callname">Person 6</h4>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-telephone-x" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                        <path fill-rule="evenodd"
+                                            d="M11.146 1.646a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708" />
+                                    </svg> Missed call</p>
+                            </div>
+                        </div>
+                        <div class="calltime">
+                            <p>16:23</p>
+                        </div>
+                    </div>
+                    <div class="calldiv">
+                        <div class="callname" style="display: flex;">
+                            <img src="batman_hero_avatar_comics-512.png" alt="">
+                            <div>
+                                <h4 id="callname">Person 12</h4>
+                                <p style="color: #ffffff;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-telephone-inbound-fill"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0" />
+                                    </svg> Incoming call</p>
+                            </div>
+                        </div>
+                        <div class="calltime">
+                            <p>16:23</p>
+                        </div>
+                    </div>
+                    <div class="calldiv">
+                        <div class="callname" style="display: flex;">
+                            <img src="smiling-young-man-illustration_1308-174669.png" alt="">
+                            <div>
+                                <h4 id="callname">Person 9</h4>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-telephone-x" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                        <path fill-rule="evenodd"
+                                            d="M11.146 1.646a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708" />
+                                    </svg> Missed call</p>
+                            </div>
+                        </div>
+                        <div class="calltime">
+                            <p>16:23</p>
+                        </div>
+                    </div>
+                    <div class="calldiv">
+                        <div class="callname" style="display: flex;">
+                            <img src="pngtree-man-avatar-with-circle-frame-vector-ilustration-png-image_6110328.png"
+                                alt="">
+                            <div>
+                                <h4 id="callname">Person 10</h4>
+                                <p style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-telephone-outbound-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5" />
+                                    </svg> outgoing call</p>
+                            </div>
+                        </div>
+                        <div class="calltime">
+                            <p>16:23</p>
+                        </div>
+                    </div>
+                    <div class="calldiv">
+                        <div class="callname" style="display: flex;">
+                            <img src="avatar.png" alt="">
+                            <div>
+                                <h4 id="callname">Person 1</h4>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-telephone-x" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                        <path fill-rule="evenodd"
+                                            d="M11.146 1.646a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708" />
+                                    </svg> Missed call</p>
+                            </div>
+                        </div>
+                        <div class="calltime">
+                            <p>16:23</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="statusscreen" id="statusscreenid">
+                <div class="calltop">
+                    <p>Status</p>
+                </div>
+
+                <div class="statusscroll">
+                    <div class="mystatus">
+                        <div class="myimg">
+                            <img src="stylish-spectacles-guy-3d-avatar-character-illustrations-png.png" alt=""
+                                width="40px">
+                        </div>
+                        <div class="mystsname">
+                            <h4 id="callname">My Status</h4>
+                            <p>No updates</p>
+                        </div>
+                    </div>
+                    <div class="recent">Recent updates</div>
+                    <div class="statusdiv">
+                        <div class="statusname" style="display: flex;">
+                            <div>
+                                <img style="border: 3px solid rgb(92, 196, 92); padding: 3px;" src="avatar.png" alt="">
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <h4 id="callname">Person 1</h4>
+                                <p>Today, 13:23</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statusdiv">
+                        <div class="statusname" style="display: flex;">
+                            <div>
+                                <img style="border: 3px solid rgb(92, 196, 92); padding: 3px;" src="images (1).png"
+                                    alt="">
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <h4 id="callname">Person 3</h4>
+                                <p>Today, 13:23</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statusdiv">
+                        <div class="statusname" style="display: flex;">
+                            <div>
+                                <img style="border: 3px solid rgb(92, 196, 92); padding: 3px;" src="images.jpeg" alt="">
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <h4 id="callname">Person 7</h4>
+                                <p>Today, 13:23</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statusdiv">
+                        <div class="statusname" style="display: flex;">
+                            <div>
+                                <img style="border: 3px solid rgb(92, 196, 92); padding: 3px;" src="images.png" alt="">
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <h4 id="callname">Person 9</h4>
+                                <p>Today, 13:23</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statusdiv">
+                        <div class="statusname" style="display: flex;">
+                            <div>
+                                <img style="border: 3px solid rgb(92, 196, 92); padding: 3px;"
+                                    src="stylish-spectacles-guy-3d-avatar-character-illustrations-png.png" alt="">
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <h4 id="callname">Person 15</h4>
+                                <p>Today, 13:23</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statusdiv">
+                        <div class="statusname" style="display: flex;">
+                            <div>
+                                <img style="border: 3px solid rgb(92, 196, 92); padding: 3px;"
+                                    src="smiling-young-man-illustration_1308-174669.png" alt="">
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <h4 id="callname">Person 11</h4>
+                                <p>Today, 13:23</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statusdiv">
+                        <div class="statusname" style="display: flex;">
+                            <div>
+                                <img style="border: 3px solid rgb(92, 196, 92); padding: 3px;"
+                                    src="pngtree-man-avatar-with-circle-frame-vector-ilustration-png-image_6110328.png"
+                                    alt="">
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <h4 id="callname">Person 4</h4>
+                                <p>Today, 13:23</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="chats" id="chatscreenid">
+                <div class="chattop">
+                    <div>
+                        <h2>Chats</h2>
+                    </div>
+                    <div class="more">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <label for="morepannel" onclick="morepanneloverlay()">
+                            <div class="moredot">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </label>
+                        <label for="morepannel" id="morepanneloverlay" class="morepanneloverlay"
+                            onclick="morepanneloverlay()"></label>
+                        <input id="morepannel" type="checkbox" checked>
+                        <div class="moreopen">
+                            <p><i class="fa-solid fa-user-plus" style="color: #ffffff;"></i>New Group</p>
+                            <p><i class="fa-regular fa-star" style="color: #ffffff;"></i>Stared messages</p>
+                            <p><i class="fa-regular fa-square-check" style="color: #ffffff;"></i>Select chats</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <input class="searhinput" type="text" placeholder="Search or start a new chat" autocomplete="off"
+                        id="searchinput">
+                    <i class="fa-solid fa-magnifying-glass sear"></i>
+                </div>
+                <div class="chatscroll">
+                    <label for="chat1" onclick="openchat1()">
+                        <div class="chat">
+                            <img src="avatar.png" alt="">
+                            <div class="chatname">
+                                <h4 id="chatname">Person 1</h4>
+                                <p>Message from Person 1</p>
+                            </div>
+                            <div class="time">
+                                <p>16:23</p>
+                                <p id="unread">5</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" name="chat" id="chat1" class="raidoo">
+
+                    <label for="chat2" onclick="openchat2()">
+                        <div class="chat">
+                            <img src="pngtree-man-avatar-with-circle-frame-vector-ilustration-png-image_6110328.png"
+                                alt="">
+                            <div class="chatname">
+                                <h4 id="chatname2">Person 2</h4>
+                                <p>Message from Person 2</p>
+                                <input type="radio" name="chat" id="chat2">
+                            </div>
+                            <div class="time">
+                                <p>12:23</p>
+                                <p id="unread2">6</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat3" onclick="openchat3()">
+                        <div class="chat">
+                            <img src="images.jpeg" alt="">
+                            <div class="chatname">
+                                <h4 id="chatname3">Person 3</h4>
+                                <p><i class="fa-solid fa-check-double"></i> You sent Photo</p>
+                                <input type="radio" name="chat" id="chat3">
+                            </div>
+                            <div class="time">
+                                <p>10:23</p>
+
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat4" onclick="openchat4()">
+                        <div class="chat">
+                            <img src="stylish-spectacles-guy-3d-avatar-character-illustrations-png.png" alt="">
+                            <div class="chatname">
+                                <h4 id="chatname5">Person 4</h4>
+                                <p>Message from Person 4</p>
+                                <input type="radio" name="chat" id="chat4">
+                            </div>
+                            <div class="time">
+                                <p>09:23</p>
+                                <p id="unread4">5</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat5" onclick="openchat5()">
+                        <div class="chat">
+                            <img src="images (1).png" alt="">
+                            <div class="chatname">
+                                <h4>Person 5</h4>
+                                <p><i class="fa-solid fa-check-double"></i> Message you sent</p>
+                                <input type="radio" name="chat" id="chat5">
+                            </div>
+                            <div class="time">
+                                <p>09:21</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat6" onclick="openchat6()">
+                        <div class="chat">
+                            <img src="pngtree-man-avatar-with-circle-frame-vector-ilustration-png-image_6110328.png"
+                                alt="">
+                            <div class="chatname">
+                                <h4>Person 6</h4>
+                                <p>Message from Person 6</p>
+                                <input type="radio" name="chat" id="chat6">
+                            </div>
+                            <div class="time">
+                                <p>07:19</p>
+                                <p id="unread6">2</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat7" onclick="openchat7()">
+                        <div class="chat">
+                            <img src="smiling-young-man-illustration_1308-174669.png" alt="">
+                            <div class="chatname">
+                                <h4>Person 7</h4>
+                                <p><i class="fa-solid fa-check-double"></i> Message you sent</p>
+                                <input type="radio" name="chat" id="chat7">
+                            </div>
+                            <div class="time">
+                                <p>25-04-2025</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat8" onclick="openchat8()">
+                        <div class="chat">
+                            <img src="stylish-spectacles-guy-3d-avatar-character-illustrations-png.png" alt="">
+                            <div class="chatname">
+                                <h4>Person 8</h4>
+                                <p><i class="fa-solid fa-check-double"></i> Message you sent</p>
+                                <input type="radio" name="chat" id="chat8">
+                            </div>
+                            <div class="time">
+                                <p>25-04-2025</p>
+
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat9" onclick="openchat9()">
+                        <div class="chat">
+                            <img src="avatar.png" alt="">
+                            <div class="chatname">
+                                <h4>Person 9</h4>
+                                <p><i class="fa-solid fa-check-double"></i> Message you sent</p>
+                                <input type="radio" name="chat" id="chat9">
+                            </div>
+                            <div class="time">
+                                <p>25-04-2025</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat10" onclick="openchat10()">
+                        <div class="chat">
+                            <img src="batman_hero_avatar_comics-512.png" alt="">
+                            <div class="chatname">
+                                <h4>Person 10</h4>
+                                <p><i class="fa-solid fa-check-double"></i> Message you sent</p>
+                                <input type="radio" name="chat" id="chat10">
+                            </div>
+                            <div class="time">
+                                <p>24-04-2025</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat11" onclick="openchat11()">
+                        <div class="chat">
+                            <img src="images.png" alt="">
+                            <div class="chatname">
+                                <h4>Person 11</h4>
+                                <p><i class="fa-solid fa-check-double"></i> Message you sent</p>
+                                <input type="radio" name="chat" id="chat11">
+                            </div>
+                            <div class="time">
+                                <p>23-04-2025</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat12" onclick="openchat12()">
+                        <div class="chat">
+                            <img src="images.jpeg" alt="">
+                            <div class="chatname">
+                                <h4>Person 12</h4>
+                                <p><i class="fa-solid fa-check-double"></i> Message you sent</p>
+                                <input type="radio" name="chat" id="chat12">
+                            </div>
+                            <div class="time">
+                                <p>22-04-2025</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat13" onclick="openchat13()">
+                        <div class="chat">
+                            <img src="stylish-spectacles-guy-3d-avatar-character-illustrations-png.png" alt="">
+                            <div class="chatname">
+                                <h4>Person 13</h4>
+                                <p><i class="fa-solid fa-check-double"></i> Message you sent</p>
+                                <input type="radio" name="chat" id="chat13">
+                            </div>
+                            <div class="time">
+                                <p>21-04-2025</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat14" onclick="openchat14()">
+                        <div class="chat">
+                            <img src="avatar.png" alt="">
+                            <div class="chatname">
+                                <h4>Person 14</h4>
+                                <p><i class="fa-solid fa-check-double"></i> Message you sent</p>
+                                <input type="radio" name="chat" id="chat14">
+                            </div>
+                            <div class="time">
+                                <p>21-04-2025</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat15" onclick="openchat15()">
+                        <div class="chat">
+                            <img src="images (1).png" alt="">
+                            <div class="chatname">
+                                <h4>Person 15</h4>
+                                <p><i class="fa-solid fa-check-double"></i> Message you sent</p>
+                                <input type="radio" name="chat" id="chat15">
+                            </div>
+                            <div class="time">
+                                <p>19-04-2025</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="chat16" onclick="openchat16()">
+                        <div class="chat">
+                            <img src="avatar.png" alt="">
+                            <div class="chatname">
+                                <h4>Person 16</h4>
+                                <p><i class="fa-solid fa-check-double"></i> Message you sent</p>
+                                <input type="radio" name="chat" id="chat16">
+                            </div>
+                            <div class="time">
+                                <p>11-04-2025</p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+            </div>
+            <div class="messages">
+                <div id="chatscreen" class="chatscreen">
+                    <div class="profile">
+                        <label for="back" onclick="closechat()"><i class="fa-solid fa-arrow-left"
+                                style="color: #ffffff; margin-right: 10px;padding-right: 10px;"></i></label>
+                        <div class="profilepic">
+                            <img id="profilepic" src="avatar.png" alt="" width="40px" height="40px">
+                        </div>
+                        <div class="profilename">
+                            <p id="chatperson">Person 1</p>
+                        </div>
+                        <div class="call">
+                            <div class="call2">
+                                <div class="phone">
+                                    <i class="fa-solid fa-video" style="color: #ffffff;"></i>
+                                </div>
+                                <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="mag">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="msgscroll" id="scrollBox">
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message from you</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side message</div>
+                            </div>
+                            <div class="msgleft">
+                                <div>left side message from another person left msg</div>
+                            </div>
+                            <div class="msgright">
+                                <div>right side</div>
+                            </div>
+                        </div>
+                        <div class="sendinput">
+                            <div class="emoji">
+                                <i class="fa-regular fa-face-smile" style="color: #ffffff;"></i>
+                                <i class="fa-solid fa-paperclip" style="color: #ffffff;"></i>
+                            </div>
+                            <div class="type">
+                                <input type="text" autocomplete="off" placeholder="Type a message" id="msgInput">
+                            </div>
+                            <div class="sendbtn">
+                                <!-- <img src="1000037240.png" alt="" width="20px" class="mic"> -->
+                                <img src="1000037239.png" alt="" width="20px" onclick="getInputValue()">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="empty">
+                    <img src="whatsapp-xxl.png" alt="">
+                    <p class="windows">Whatsapp for windows</p>
+                    <div class="lockdiv">
+                        <p class="lock"><i class="fa-solid fa-lock"></i>End-to-end encrypted</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

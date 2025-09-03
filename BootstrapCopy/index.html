@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="icon" href="pngegg.ico">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"
+        defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo-links">
+            <div class="logo">
+                <img src="NavLogo.png" alt="logo" width="50px">
+            </div>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" style="text-decoration: none; color: white;">Docs</a></li>
+                    <li><a href="https://getbootstrap.com/docs/5.3/examples/" style="text-decoration: none; color: white;">Examples</a></li>
+                    <li><a href="https://icons.getbootstrap.com/" target="_blank" style="text-decoration: none; color: white;">Icons</a></li>
+                    <li><a href="https://themes.getbootstrap.com/" target="_blank" style="text-decoration: none; color: white;">Themes</a></li>
+                    <li><a href="https://blog.getbootstrap.com/" target="_blank" style="text-decoration: none; color: white;">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+            <div class="ctrl">
+                <p>CTRL <span>K</span></p>
+            </div>
+        </div>
+        <div class="media-theme">
+            <div class="media">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-opencollective" viewBox="0 0 16 16">
+                    <path fill-opacity=".4"
+                        d="M12.995 8.195c0 .937-.312 1.912-.78 2.693l1.99 1.99c.976-1.327 1.6-2.966 1.6-4.683 0-1.795-.624-3.434-1.561-4.76l-2.068 2.028c.468.781.78 1.679.78 2.732z" />
+                    <path
+                        d="M8 13.151a4.995 4.995 0 1 1 0-9.99c1.015 0 1.951.273 2.732.82l1.95-2.03a7.805 7.805 0 1 0 .04 12.449l-1.951-2.03a5.07 5.07 0 0 1-2.732.781z" />
+                </svg>
+            </div>
+
+            <div class="vrline">
+
+            </div>
+            <div class="version">
+                <label for="versioncheck">
+                    <p class="versionp">v5.3 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                            fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg></p>
+                </label><input type="checkbox" id="versioncheck" checked>
+                <div class="version-dd">
+                    <p>v5 release</p>
+                    <p class="neww" style="color: white;">Latest v5.3.3</p>
+                    <p>V 5.3.2</p>
+                    <p>V 5.2.3</p>
+                    <p>Previous release</p>
+                    <p>V 5.1.2</p>
+                    <p>V 5.0.2</p>
+                </div>
+            </div>
+            <div class="vrline">
+
+            </div>
+            <div class="theme">
+               <label for="themecheck"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                    class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg></label><input type="checkbox" id="themecheck" checked>
+                <div class="theme-dd">
+                    <p class="neww" style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="me-2 bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                        </svg>Light</p>
+                    <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi me-2 bi-moon-stars-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                            <path
+                                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                        </svg>Dark</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="me-2 bi bi-circle-half" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16" />
+                        </svg>Auto</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="page1">
+        <div class="securityupdate pe-1">
+            <p>Get Security Updates for Bootstrap 3 & 4 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="currentColor" class="bi bi-arrow-right-short ps-1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                </svg></p>
+        </div>
+        <div class="logobig">
+            <img src="bootstrap-logo-shadow@2x.png" alt="logo">
+        </div>
+        <div class="slogan">
+            <p class="slogan-para">Build fast, responsive sites with Bootstrap</p>
+        </div>
+        <div class="disc">
+            <p>Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize
+                prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
+        </div>
+        <div class="npm-docs">
+            <div class="npm-docs-div">
+                <div class="npms">
+                    <p>$ <span> npm </span> i bootstrap@5.3.6 </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-clipboard" viewBox="0 0 16 16">
+                        <path
+                            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
+                        <path
+                            d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
+                    </svg>
+                </div>
+                <div class="docs">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-book-half" viewBox="0 0 16 16">
+                            <path
+                                d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                        </svg> Read the docs</p>
+                </div>
+            </div>
+        </div>
+        <div class="versioncontrol">
+            <p>Currently <b>v5.3.6</b></p>
+            <p>.</p>
+            <p><a href="">Download</a></p>
+            <p>.</p>
+            <p><a href="">All releases </a></p>
+        </div>
+
+        <div class="ad">
+            <div class="ad-inner">
+                <img src="ad.jpeg" alt="ad">
+                <p>Build your website for just $3.88/mth. More value and performance with Namecheap.
+                    <span class="pt-1">ads via Carbon</span>
+                </p>
+            </div>
+        </div>
+        <div class="openclose">
+            <p>
+                <>
+            </p>
+        </div>
+        <div class="getstart">
+            <p>Get started any way you want</p>
+        </div>
+
+        <div class="jump">
+            <p>Jump right into building with Bootstrap—use the CDN, install it via package manager, or download the
+                source code.</p>
+        </div>
+
+        <div class="installguide">
+            <p><a href="#">Read installation docs <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                        fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg></a></p>
+        </div>
+
+        <div class="links-main">
+            <div class="links-sub d-flex">
+                <div class="links-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-box-seam" viewBox="0 0 16 16">
+                        <path
+                            d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z" />
+                    </svg>
+                    <h2 class="mt-3">Install via package manager</h2>
+                    <p>Install Bootstrap’s source Sass and JavaScript files via npm, RubyGems, Composer, or Meteor.
+                        Package-managed installs don’t include documentation or our full build scripts. <a href="">You
+                            can also use any demo from our Examples repo</a> to quickly jumpstart Bootstrap projects.
+                    </p>
+                    <div class="link1">
+                        <p>$ npm <span>install</span> bootstrap@5.3.6</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path
+                                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
+                            <path
+                                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
+                        </svg>
+                    </div>
+                    <div class="link2">
+                        <p>$ gem <span>install</span> bootstrap <span style="color: #c6303e;">-v</span> <span
+                                style="color: #087990;">5.3.6</span></p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path
+                                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
+                            <path
+                                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
+                        </svg>
+                    </div>
+                    <p><a href="">Read our installation docs</a> for more info and additional package managers.</p>
+                </div>
+                <div class="links-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-globe2 mb-3" viewBox="0 0 16 16">
+                        <path
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                    </svg>
+                    <h2>Include via CDN</h2>
+                    <p>When you only need to include Bootstrap’s compiled CSS or JS, you can use <a
+                            href="">jsDelivr</a>. See it in action with our simple <a href="">quick start</a>, or <a
+                            href="">browse the examples</a> to jumpstart your next project. You can also choose to
+                        include Popper and our JS <a href="">separately</a>.</p>
+                    <div class="link2  links2  overflow-auto text-nowrap style">
+                        <p style="color: #ab296a;">&lt;link <span style="color: #084298;">href=</span>
+                            "https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+                            <span style="color: #084298;"> rel=</span>"stylesheet"
+                            <span
+                                style="color: #084298;">integrity=</span>"sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+                            <span style="color: #084298;">crossorigin=</span>"anonymous"&gt;
+                        </p>
+                        <div class="clipboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-clipboard" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
+                                <path
+                                    d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="link2 links2 overflow-auto text-nowrap pe-3">
+                        <p style="color: #ab296a;">&lt;script <span
+                                style="color: #084298;">src=</span>"https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+                            <span
+                                style="color: #084298;">integrity=</span>"sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+                            <span style="color: #084298;">crossorigin=</span>"anonymous"&gt;&lt;"/script"&gt;
+                        </p>
+                        <div class="clipboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-clipboard" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
+                                <path
+                                    d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="read">
+            <p>Read our getting started guides</p>
+            <p>Get a jump on including Bootstrap's source files in a new project with our official guides.</p>
+            <div class="d-flex text-center">
+                <div class="webpack me-4">
+                    <img src="webpack.svg" alt="" width="72px">
+                    <p class="mt-2">webpack</p>
+                </div>
+                <div class="webpack me-4">
+                    <img src="parcel.png" alt="" width="72px">
+                    <p class="mt-2">Parcel</p>
+                </div>
+                <div class="webpack">
+                    <img src="vite.svg" alt="" width="72px">
+                    <p class="mt-2">Vite</p>
+                </div>
+            </div>
+
+            <div class="biz-kit">
+                <img class="rounded-4" width="80px" height="80px" src="122353952.png" alt="">
+            </div>
+            <div class="customize">
+                <p>Customize everything with Sass</p>
+                <p>Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you
+                    need, enable global options like gradients and shadows, and write your own CSS with our variables,
+                    maps, functions, and mixins.</p>
+                <a href="">Learn more about customizing
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="include">
+            <div class="include-left">
+                <p>Include all of Bootstrap’s Sass</p>
+                <p>Import one stylesheet and you're off to the races with every feature of our CSS.</p>
+            </div>
+            <div class="include-right">
+                <p>Include what you need</p>
+                <p>The easiest way to customize Bootstrap—include only the CSS you need.</p>
+            </div>
+        </div>
+
+        <div class="includelinks">
+            <div class="includelinks-left">
+                <div class="includelinks-left-link">
+                    <p>// Variable overrides first</p>
+                    <p><span class="me-2" style="color:#c6303e;">$primary:</span> #900;</p>
+                    <p><span class="me-2" style="color:#c6303e;">$enable-shadows:</span> <span
+                            style="color: #087990;">true</span>;</p>
+                    <p><span class="me-2" style="color:#c6303e;">$prefix:</span> <span
+                            style="color: #084298;">"mo-"</span>;</p>
+                    <p class="mt-3">// Then import Bootstrap</p>
+                    <p><span class="me-2" style="color: #ab296a;">@import</span> <span style="color: #084298;">
+                            "../node_modules/bootstrap/scss/bootstrap"</span>;</p>
+                </div>
+                <p class="mt-3">Learn more about our <a href="">global Sass options.</a></p>
+            </div>
+
+            <div class="includelinks-right">
+                <div class="includelinks-left-link">
+                    <p>// Functions first</p>
+                    <p><span class="me-2" style="color: #ab296a;">@import</span> <span
+                            style="color: #084298;"></span>"../node_modules/bootstrap/scss/functions"</span>;</p>
+                    <p class="mt-3">// Variable overrides second</p>
+                    <p><span class="me-2" style="color:#c6303e;">$primary:</span> #900;</p>
+                    <p><span class="me-2" style="color:#c6303e;">$enable-shadows:</span> <span
+                            style="color: #087990;">true</span>;</p>
+                    <p><span class="me-2" style="color:#c6303e;">$prefix:</span> <span
+                            style="color: #084298;">"mo-"</span>;</p>
+                    <p class="mt-3">// Required Bootstrap imports</p>
+                    <p><span class="me-2" style="color: #ab296a;">@import</span> <span
+                            style="color: #084298;">"../node_modules/bootstrap/scss/variables"</span>;</p>
+                    <p><span class="me-2" style="color: #ab296a;">@import</span> <span
+                            style="color: #084298;">"../node_modules/bootstrap/scss/variables-dark"</span>;</p>
+                    <p><span class="me-2" style="color: #ab296a;">@import</span> <span
+                            style="color: #084298;">"../node_modules/bootstrap/scss/maps"</span>;</p>
+                    <p><span class="me-2" style="color: #ab296a;">@import</span> <span
+                            style="color: #084298;">"../node_modules/bootstrap/scss/mixins"</span>;</p>
+                    <p><span class="me-2" style="color: #ab296a;">@import</span> <span
+                            style="color: #084298;">"../node_modules/bootstrap/scss/root"</span>;</p>
+                    <p class="mt-3">// Optional components</p>
+                    <p><span class="me-2" style="color: #ab296a;">@import</span> <span
+                            style="color: #084298;">"../node_modules/bootstrap/scss/utilities"</span>;</p>
+                    <p><span class="me-2" style="color: #ab296a;">@import</span> <span
+                            style="color: #084298;">"../node_modules/bootstrap/scss/reboot"</span>;</p>
+                    <p><span class="me-2" style="color: #ab296a;">@import</span> <span
+                            style="color: #084298;">"../node_modules/bootstrap/scss/containers"</span>;</p>
+                    <p><span class="me-2" style="color: #ab296a;">@import</span> <span
+                            style="color: #084298;">"../node_modules/bootstrap/scss/grid"</span>;</p>
+                    <p><span class="me-2" style="color: #ab296a;">@import</span> <span
+                            style="color: #084298;">"../node_modules/bootstrap/scss/helpers"</span>;</p>
+                    <p><span class="me-2" style="color: #ab296a;">@import</span> <span
+                            style="color: #084298;">"../node_modules/bootstrap/scss/utilities/api"</span>;</p>
+
+                </div>
+                <p class="mt-3">Learn more about <a href="">using Bootstrap with Sass.</a></p>
+            </div>
+        </div>
+
+        <div class="curly">
+            <p>{ }</p>
+            <p>Build and extend in real-time with CSS variables</p>
+            <p>Bootstrap 5 is evolving with each release to better utilize CSS variables for global theme styles,
+                individual components, and even utilities. We provide dozens of variables for colors, font styles, and
+                more at a <span class="m-1" style="color: #c6303e;">:root</span> level for use anywhere. On components
+                and utilities, CSS variables are scoped to the
+                relevant class and can easily be modified.</p>
+            <p><a href="">Learn more about CSS variables <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg></a></p>
+        </div>
+        <div class="include">
+            <div class="include-left">
+                <p>Using CSS variables</p>
+                <p style="font-size: 18px;">Use any of our <a href="">global :root variables</a> to write new styles.
+                    CSS variables use the <span class="m-1" style="color: #c6303e;">var(--bs-variableName)</span> syntax
+                    and can be inherited by children elements.</p>
+            </div>
+            <div class="include-right">
+                <p>Customizing via CSS variables</p>
+                <p style="font-size: 18px;">Override global, component, or utility class variables to customize
+                    Bootstrap just how you like. No need to redeclare each rule, just a new variable value.</p>
+            </div>
+        </div>
+
+        <div class="includelinks">
+            <div class="includelinks-left">
+                <div class="includelinks-left-link">
+                    <p style="color: #087990;">.component { </p>
+                    <p> <span class="me-1" style="color: #6f42c1;"> color: </span> var(--bs-gray-800); </p>
+                    <p> <span class="me-1" style="color: #6f42c1;">background-color: </span> var(--bs-gray-100); </p>
+                    <p> <span class="me-1" style="color: #6f42c1;">border: </span>1px solid var(--bs-gray-200); </p>
+                    <p> <span class="me-1" style="color: #6f42c1;">border-radius: </span> .25rem ; </p>
+                    <p style="color: #087990;"> } </p>
+                    <p style="color: #087990;"> .component-header { </p>
+                    <p> <span class="me-1" style="color: #6f42c1;"> color: </span> var(--bs-purple); </p>
+                    <p style="color: #087990;"> } </p>
+                </div>
+            </div>
+
+            <div class="includelinks-right">
+                <div class="includelinks-left-link">
+                    <p style="color: #087990;"> body {</p>
+                    <p> <span class="me-1" style="color: #6f42c1;">--bs-body-font-family: </span>
+                        var(--bs-font-monospace);</p>
+                    <p> <span class="me-1" style="color: #6f42c1;">--bs-body-line-height: </span>1.4;</p>
+                    <p> <span class="me-1" style="color: #6f42c1;">--bs-body-bg: </span>var(--bs-gray-100);</p>
+                    <p style="color: #087990;"> }</p>
+                    <p> </p>
+                    <p style="color: #087990;"> .table {</p>
+                    <p> <span class="me-1" style="color: #6f42c1;">--bs-table-color: </span> var(--bs-gray-600);</p>
+                    <p> <span class="me-1" style="color: #6f42c1;">--bs-table-bg: </span>var(--bs-gray-100);</p>
+                    <p> <span class="me-1" style="color: #6f42c1;">--bs-table-border-color: </span> transparent;</p>
+                    <p style="color: #087990;"> }</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="components">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hdd-stack"
+                viewBox="0 0 16 16">
+                <path
+                    d="M14 10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zM2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2z" />
+                <path
+                    d="M5 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M14 3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" />
+                <path d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+            </svg>
+            <div>{*}</div>
+        </div>
+
+        <div class="customize">
+            <p>Components, meet the Utility API</p>
+            <p class="" style="width: 65%;">New in Bootstrap 5, our utilities are now generated by our <a
+                    href="">Utility API</a>. We built it as a
+                feature-packed
+                Sass map that can be quickly and easily customized. It's never been easier to add, remove, or modify any
+                utility classes. Make utilities responsive, add pseudo-class variants, and give them custom names.</p>
+
+        </div>
+        <div class="include mt-5">
+            <div class="include-left">
+                <p>Quickly customize components</p>
+                <p style="font-size: 18px;">Apply any of our included utility classes to our components to customize
+                    their appearance, like the navigation example below. There are hundreds of classes available—from
+                    <a href="">positioning</a> and <a href="">sizing</a> to <a href="">colors</a> and <a
+                        href="">effects</a>. Mix them with CSS variable overrides for even more
+                    control.
+                </p>
+                <div class="nav-tab">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Contact</button>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2"
+                        role="tablist"
+                        style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button"
+                                role="tab" aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button"
+                                role="tab" aria-selected="false">Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button"
+                                role="tab" aria-selected="false">Contact</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links-l">
+                    <p class=""><span style="color: #ab296a;">&lt;ul <span style="color: #084298;">class=</span>"nav
+                            nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" <span
+                                style="color: #084298;">id=</span>"pillNav2" <span
+                                style="color: #084298;">role=</span>"tablist" style="--bs-nav-link-color:
+                            var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary);
+                            --bs-nav-pills-link-active-bg: var(--bs-white);"&gt;</span></p>
+                    <p class="ms-2" style="color: #ab296a;">&lt;li <span style="color: #084298;">class=</span>"nav-item"
+                        <span style="color: #084298;">role=</span>"presentation"&gt;</li>
+                    </p>
+                    <p class="ms-4" style="color: #ab296a;">&lt;button <span
+                            style="color: #084298;">class=</span>"nav-link active rounded-5" <span
+                            style="color: #084298;">id=</span>"home-tab2" <span
+                            style="color: #084298;">data-bs-toggle=</span>"tab" <span
+                            style="color: #084298;">type=</span>"button" <span style="color: #084298;">role=</span>"tab"
+                        aria-selected="true">Home</button&gt;< /p>
+                    <p class="ms-2" style="color: #ab296a;">&lt;/li&gt;</p>
+                    <p class="ms-2" style="color: #ab296a;">&lt;li <span style="color: #084298;">class=</span>"nav-item"
+                        <span style="color: #084298;">role=</span>"presentation"&gt;
+                    </p>
+                    <p class="ms-4" style="color: #ab296a;">&lt;button <span
+                            style="color: #084298;">class=</span>"nav-link rounded-5" <span
+                            style="color: #084298;">id=</span>"profile-tab2" data-bs-toggle="tab" type="button" <span
+                            style="color: #084298;">role=</span>"tab" aria-selected="false">Profile</button&gt;< /p>
+                    <p class="ms-2" style="color: #ab296a;">&lt;/li&gt;</p>
+                    <p class="ms-2" style="color: #ab296a;">&lt;li <span style="color: #084298;">class=</span>"nav-item"
+                        <span style="color: #084298;">role=</span>"presentation"&gt;
+                    </p>
+                    <p class="ms-4" style="color: #ab296a;">&lt;button <span
+                            style="color: #084298;">class=</span>"nav-link rounded-5" <span
+                            style="color: #084298;">id=</span>"contact-tab2" data-bs-toggle="tab" type="button"
+                        role="tab" aria-selected="false">Contact</button&gt;< /p>
+                    <p class="ms-2" style="color: #ab296a;">&lt;/li&gt;</p>
+                    <p style="color: #ab296a;">&lt;/ul&gt;</p>
+                    <div class="clip"></div>
+
+                </div>
+                <p class="ms-2 mt-2" style="font-size: 20px ; font-weight: 600;"><a href="">Explore customized
+                        components<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg></a></p>
+            </div>
+
+            <div class="include-right">
+                <p>Create and extend utilities</p>
+                <p style="font-size: 17px;">Use Bootstrap's utility API to modify any of our included utilities or
+                    create your own custom utilities for any project. Import Bootstrap first, then use Sass map
+                    functions to modify, add, or remove utilities.</p>
+
+                <div class="links-r">
+                    <p><span style="color: #ab296a;"><span style="color: #ab296a;">@import</span>
+                            "bootstrap/scss/bootstrap";</span></p>
+                    <p style="color: #084298;"> <span style="color: #c6303e;"></span> map-merge(</p>
+                    <p class="ms-2" style=" color: #ab296a;">$utilities,</p>
+                    <p class="ms-2">(</p>
+                    <p class="ms-4" style="color: #084298;">"cursor": (</p>
+                    <p class="ms-5"><span style="color: #6f42c1;"> property:</span> cursor,</p>
+                    <p class="ms-5"><span style="color: #6f42c1;">class:</span> cursor,</p>
+                    <p class="ms-5"><span style="color: #6f42c1;"> responsive:</span> true,</p>
+                    <p class="ms-5"> <span style="color: #6f42c1;">values:</span> auto pointer grab,</p>
+                    <p class="ms-4">)</p>
+                    <p class="ms-2">)</p>
+                    <p>);</p>
+                </div>
+
+                <p class="ms-2 mt-2" style="font-size: 20px ; font-weight: 600;"><a href="">Explore the utility API<svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg></a></p>
+
+            </div>
+        </div>
+
+        <div class="plugins">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plugin"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 1 2.898 5.673c-.167-.121-.216-.406-.002-.62l1.8-1.8a3.5 3.5 0 0 0 4.572-.328l1.414-1.415a.5.5 0 0 0 0-.707l-.707-.707 1.559-1.563a.5.5 0 1 0-.708-.706l-1.559 1.562-1.414-1.414 1.56-1.562a.5.5 0 1 0-.707-.706l-1.56 1.56-.707-.706a.5.5 0 0 0-.707 0L5.318 5.975a3.5 3.5 0 0 0-.328 4.571l-1.8 1.8c-.58.58-.62 1.6.121 2.137A8 8 0 1 0 0 8a.5.5 0 0 0 1 0" />
+            </svg>
+            <h2>Powerful JavaScript plugins without jQuery</h2>
+            <p>Add toggleable hidden elements, modals and offcanvas menus, popovers and tooltips, and so much more—all
+                without jQuery. Bootstrap's JavaScript is HTML-first, meaning most plugins are added with data
+                attributes in your HTML. Need more control? Include individual plugins programmatically.</p>
+            <p class="linkss fw-bold"><a href="">Learn more about Bootstrap JavaScript</a><svg
+                    xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-arrow-right text-primary ms-2" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg></p>
+        </div>
+
+        <div class="include mt-5">
+            <div class="include-left">
+                <p>Data attribute API</p>
+                <p style="font-size: 16px; width: 95%;">Why write more JavaScript when you can write HTML? Nearly all of
+                    Bootstrap's JavaScript plugins feature a first-class data API, allowing you to use JavaScript just
+                    by adding <span style="color: #ab296a;  " class="m-1">data</span> attributes.
+                </p>
+
+
+                <div class="dropdown1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button">Dropdown item</button></li>
+                            <li><button class="dropdown-item" type="button">Dropdown item</button></li>
+                            <li><button class="dropdown-item" type="button">Dropdown item</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="links-l p-3">
+                    <p style="color: #ab296a;"><span>&lt;div <span style="color: #084298;">class=</span>
+                            "dropdown"&gt;</span></p>
+                    <p style="color: #ab296a;" class="ms-2">
+                    <p class="ms-2" style="color: #ab296a;">&lt;button <span style="color: #084298;">class=</span>"btn
+                        btn-primary dropdown-toggle" <span style="color: #084298;">type=</span>"button"
+                        data-bs-toggle="dropdown" aria-expanded="false"&gt;</p>
+                    <p style="color: #ab296a;" class="ms-4">Dropdown</p>
+                    <p style="color: #ab296a;" class="ms-2">&lt;/button&gt;</p>
+                    <p style="color: #ab296a;" class="ms-2"> &lt;ul <span
+                            style="color: #084298;">class=</span>"dropdown-menu"&gt;</p>
+                    <p style="color: #ab296a;" class="ms-4">&lt;li&gt;&lt;button <span
+                            style="color: #084298;">class=</span>"dropdown-item" <span
+                            style="color: #084298;">type=</span>"button"&gt;Dropdown item&lt;/button&gt;&lt;/li&gt;</p>
+                    <p style="color: #ab296a;" class="ms-4">&lt;li&gt;&lt;button <span
+                            style="color: #084298;">class=</span>"dropdown-item" <span
+                            style="color: #084298;">type=</span>"button"&gt;Dropdown item&lt;/button&gt;&lt;/li&gt;</p>
+                    <p style="color: #ab296a;" class="ms-4">&lt;li&gt;&lt;button <span
+                            style="color: #084298;">class=</span>"dropdown-item" <span
+                            style="color: #084298;">type=</span>"button"&gt;Dropdown item&lt;/button&gt;&lt;/li&gt;</p>
+                    <p style="color: #ab296a;" class="ms-2">&lt;/ul&gt;</p>
+                    <p style="color: #ab296a;" class="">&lt;/div&gt;</p>
+                    <div class="clip"></div>
+                </div>
+                <p class="mt-4" style="font-size: 17px ;">Learn more about <a href="">our JavaScript as modules</a> and
+                    <a href="">using the programmatic</a> API.
+                </p>
+            </div>
+
+            <div class="include-right">
+                <p>Comprehensive set of plugins</p>
+                <p style="font-size: 17px;">Bootstrap features a dozen plugins that you can drop into any project. Drop
+                    them in all at once, or choose just the ones you need.</p>
+
+                <div class="plugins-right-main">
+                    <div class="hrline"></div>
+                    <div class="pulgins-sub">
+                        <h4>Alert</h4>
+                        <p>Show and hide alert messages to your users.</p>
+                    </div>
+                    <div class="pulgins-sub">
+                        <h4>Button</h4>
+                        <p>Programmatically control the active state for buttons.</p>
+                    </div>
+                    <div class="pulgins-sub">
+                        <h4>Carousel</h4>
+                        <p>Add slideshows to any page, including support for crossfade.</p>
+                    </div>
+                    <div class="pulgins-sub">
+                        <h4>Collapse</h4>
+                        <p>Expand and collapse areas of content, or create accordions.</p>
+                    </div>
+                    <div class="pulgins-sub">
+                        <h4>Dropdown</h4>
+                        <p>Create menus of links, actions, forms, and more.</p>
+                    </div>
+                    <div class="pulgins-sub">
+                        <h4>Modal</h4>
+                        <p>Add flexible and responsive dialogs to your project.</p>
+                    </div>
+                    <div class="pulgins-sub">
+                        <h4>Offcanvas</h4>
+                        <p>Build and toggle hidden sidebars into any page.</p>
+                    </div>
+                    <div class="pulgins-sub">
+                        <h4>Popover</h4>
+                        <p>Create custom overlays. Built on Popper</p>
+                    </div>
+                    <div class="pulgins-sub">
+                        <h4>Scrollspy</h4>
+                        <p>Automatically update active nav links based on page scroll.</p>
+                    </div>
+                    <div class="pulgins-sub">
+                        <h4>Tab</h4>
+                        <p>Allow Bootstrap nav components to toggle contents.</p>
+                    </div>
+                    <div class="pulgins-sub">
+                        <h4>Toast</h4>
+                        <p>Show and hide notifications to your visitors.</p>
+                    </div>
+                    <div class="pulgins-sub">
+                        <h4>Tooltip</h4>
+                        <p>Replace browser tooltips with custom ones. Built on Popper.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+            <div>
+                <img src="Screenshot 2025-05-09 132840.png" width="70px" alt="">
+                <p class="head">Personalize it with Bootstrap Icons</p>
+                <p class="paraa"><a href="">Bootstrap Icons</a> is an open source SVG icon library featuring over 1,800
+                    glyphs, with more added every release. They're designed to work in any project, whether you use
+                    Bootstrap itself or not. Use them as SVGs or icon fonts—both options give you vector scaling and
+                    easy customization via CSS.</p>
+                <p style="font-size: 20px; font-weight: 600;"><a href="">Get Bootstrap Icons<svg
+                            xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                            class="bi m-2 bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg></a></p>
+            </div>
+            <div>
+                <img class="mt-5" src="bootstrap-icons@2x.png" width="612px" alt="">
+            </div>
+        </div>
+
+        <div class="icons">
+            <div>
+                <svg id="droplet" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-droplet-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6M6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13" />
+                </svg>
+                <p class="head w-100">Make it yours with official Bootstrap Themes</p>
+                <p class="paraa w-100">Take Bootstrap to the next level with premium themes from the <a href="">official
+                        Bootstrap Themes marketplace</a>. Themes are built on Bootstrap as their own extended
+                    frameworks, rich with new components and plugins, documentation, and powerful build tools.</p>
+                <p style="font-size: 20px; font-weight: 600;"><a href="">Browse Bootstrap Themes<svg
+                            xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                            class="bi m-2 bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg></a></p>
+            </div>
+            <div>
+                <img src="bootstrap-themes@2x.png" width="612px" alt="">
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-sub">
+                <div class="footer-div-1">
+                    <img src="bootstrap.png" width="35px" height="35px" alt="" class="me-2"><span
+                        style="font-size: 18px; font-weight: 400; height: 50px; align-content: center; position: relative; top: 2px;">Bootstrap</span>
+                    <p style="font-size: 14px; margin-top: 20px;">Designed and built with all the love in the world by
+                        the Bootstrap team with the help of our contributors.</p>
+                    <p style="font-size: 14px;">Code licensed MIT, docs CC BY 3.0.</p>
+                    <p style="font-size: 14px;">Currently v5.3.6.</p>
+                </div>
+                <div class="footer-div-2">
+                    <p style="text-align: center; font-size: 20px; font-weight: 500;">Links</p>
+                    <ul style="margin-left: 115px;">
+                        <li>Home</li>
+                        <li>Docs</li>
+                        <li>Examples</li>
+                        <li>Icons</li>
+                        <li>Themes</li>
+                        <li>Blog</li>
+                        <li>Swag Store</li>
+                    </ul>
+                </div>
+                <div class="footer-div-3">
+                    <p style="font-size: 20px; font-weight: 500;">Guides</p>
+                    <ul>
+                        <li>Getting started</li>
+                        <li>Starter template</li>
+                        <li>Webpack</li>
+                        <li>Parcel</li>
+                        <li>vite</li>
+                    </ul>
+                </div>
+                <div class="footer-div-4">
+                    <p style="font-size: 20px; font-weight: 500;">Projects</p>
+                    <ul>
+                        <li>Bootstrap 5</li>
+                        <li>Bootstrap 4</li>
+                        <li>Icons</li>
+                        <li>RFS</li>
+                        <li>Example Repo</li>
+                    </ul>
+                </div>
+                <div class="footer-div-5">
+                    <p style="font-size: 20px; font-weight: 500;">Community</p>
+                    <ul>
+                        <li>Issues</li>
+                        <li>Discussion</li>
+                        <li>Corporate sponsors</li>
+                        <li>Open collective</li>
+                        <li>Stack overflow</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div> <!-- Page1 end -->
+
+</body>
+
+</html>

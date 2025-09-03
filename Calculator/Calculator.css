@@ -1,0 +1,82 @@
+/* Center all content on the page */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(168, 156, 141);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main {
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #000;
+    border-radius: 30px;
+    background-color: rgb(90, 118, 110);
+}
+
+.screen {
+    background-color: antiquewhite;
+    border-radius: 20px;
+    border: 0px solid #000;
+    width: 278px;
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 60px;
+    padding: 2px 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.button {
+    width: 65px;
+    height: 60px;
+    border-radius: 50px;
+    border-color: #f0f0f0;
+    font-size: 22px;
+    border: 1px solid #f0f0f0;
+    font-weight: bold;
+}
+
+.double {
+    font-weight: bold;
+    font-size: 22px;
+    width: 138px;
+    height: 60px;
+    border-color: #f0f0f0;
+    border-radius: 50px;
+    color: black;
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+}
+
+.buttonright{
+    font-weight: bold;
+    width: 65px;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid rgb(28, 83, 71);
+    color: white;
+    background-color: rgb(28, 83, 71);
+    font-size: 20px;
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #00751d;
+    background: linear-gradient(160deg, rgba(0, 117, 29, 1) 19%, rgba(0, 157, 189, 1) 100%);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clock {
+    font-size: 7em;
+    border: 5px solid;
+    width: fit-content;
+    padding: 20px 70px;
+    display: flex;
+    color: white;
+    border-radius: 200px;
+    align-items: center;
+}
+
+.date {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: white;
+}
+
+#period {
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-left: 10px;
+}

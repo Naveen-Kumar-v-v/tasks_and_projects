@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: pinsan, sans-serif;
+    background : linear-gradient(to top, rgba(0, 0, 0, .5)50%, rgba(0, 0, 0, .5)50%), url(PintrestBg.png);
+    background-size: cover;
+    align-content: center;
+    height: 100vh;
+}
+
+.container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    margin: auto;
+    width: 450px;
+    border-radius: 20px;
+    text-align: center;
+    /* padding: 20px 80px; */
+}
+
+h1{
+    /* background-color: aqua; */
+    font-size: 34px;
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+form{
+    padding: 0 90px;
+}
+
+.logo{
+    margin-top: 35px;
+    width: 40px;
+    height: 40px;
+}
+
+.email{
+    margin-top: 25px;
+    display: block;
+    text-align: left;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.emailinput{
+    margin-top: 5px;
+    width: 100%;
+    font-size: 15px;
+    padding: 12px 12px 12px 16px;
+    border-radius: 15px;
+    border: 1px solid grey;
+}
+
+.password{
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: left;
+    display: block;
+}
+
+.passwordinput{
+    margin-top: 5px;
+    width: 100%;
+    font-size: 15px;
+    padding: 12px 36px 12px 16px;
+    border-radius: 15px;
+    border: 1px solid grey;
+}
+
+.passwordinput::placeholder{
+    color: rgb(156, 154, 154);
+}
+.forgot{
+    margin: 10px 5px;
+    text-align: left;
+}
+.forgot a{
+    
+    font-size: 14px;
+    color: #215D82;
+    text-decoration: none;
+}
+.loginbutton{
+    width: 100%;
+    background-color: crimson;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: 700;
+    padding: 12px 6px;
+}
+
+.or{
+    margin: 10px 0;
+}
+.facebookbutton{
+    width: 100%;
+    background-color: #1877F2 ;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 6px;
+}
+
+.googlebutton{
+    width: 100%;
+    background-color: rgb(206, 200, 200) ;
+    border: none;
+    border-radius: 5px;
+    color: rgb(73, 72, 72);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 6px;
+}
+
+.fa-brands{
+    margin-right: 30px;
+    font-size: 20px;
+}

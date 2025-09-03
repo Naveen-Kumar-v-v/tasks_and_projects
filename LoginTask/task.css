@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+    background-color: violet;
+    height: 100vh;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login {
+    margin: auto;
+    padding: 10px 20px 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    width: 440px;
+    height: auto;
+}
+
+.logo {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: start;
+}
+
+.loginlable {
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+    text-align: start;
+}
+
+.discription {
+    padding-left: 20px;
+    text-align: start;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.email {
+    margin-top: 40px;
+    padding-left: 20px;
+    text-align: start;
+    width: 100%;
+}
+
+.emailinput {
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 20px;
+    ;
+    text-align: start;
+}
+
+
+.password {
+    font-weight: 500;
+    width: 100%;
+    margin-top: 25px;
+    padding-left: 20px;   
+    text-align: left;
+}
+
+.forgot{
+    color: grey;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 125px;   
+    text-align: end;
+}
+
+.passwordinput{
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 20px; ;
+    text-align: start;
+    
+}
+
+
+button {
+    width: 85%;
+    color: white;
+    border: none;
+    font-size: 15px;
+    margin-top: 50px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.inp {
+    width: 90%;
+    padding: 5px;
+}
+
+.checkbox {
+    text-align: start;
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.reg {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+    width: 100%;
+}
